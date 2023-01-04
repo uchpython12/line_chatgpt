@@ -8,3 +8,5 @@ ADD . /line_chatgpt
 RUN pip3 install -r requirements.txt
 # 執行python的指令語法
 CMD ["python3","run.py"]
+# 執行python的指令語法
+CMD ["python3","ngrok自動啟動加自動上傳Webhook網址.py"]
