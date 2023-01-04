@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 """-----------------------------需要改成自己的--------------------------------"""
 # auth_token = ""
 # # YouruserID=""
-auth_token, 接收人的id = Line_API.Line_讀取設定檔Excel('line.xlsx')
+auth_token, 接收人的id,openai_key = Line_API.Line_讀取設定檔Excel('line.xlsx')
 """-----------------------------需要改成自己的--------------------------------"""
 
 
