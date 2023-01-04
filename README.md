@@ -10,6 +10,15 @@ git clone https://github.com/uchpython12/line_chatgpt
 cd https://github.com/uchpython12/line_chatgpt
 ```
 
+### line.xlsx
+修改xlsx，寫上自己的key
+
+```
+auth_token=""
+id=""
+openai_key=""
+```
+
 ### Run
 本機直接使用並執行,可省略Docker,執行run.py&ngrok自動啟動加自動上傳Webhook網址.py
 
@@ -33,14 +42,6 @@ docker run -p 8888:8888 line_chatgpt
 pip install -r requirements.txt
 ```
 
-### line.xlsx
-修改xlsx，寫上自己的key
-
-```
-auth_token=""
-id=""
-openai_key=""
-```
 
 ### Running the Project
 套件安裝成功後，即可開始執行本專案。
