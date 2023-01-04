@@ -10,6 +10,14 @@ git clone https://github.com/uchpython12/line_chatgpt
 cd https://github.com/uchpython12/line_chatgpt
 ```
 
+### Run
+本機直接使用並執行,可省略Docker,執行run.py&ngrok自動啟動加自動上傳Webhook網址.py
+
+```
+python run.py
+python ngrok自動啟動加自動上傳Webhook網址.py
+```
+
 ### Docker Build Image
 Docker自動打包image 本地端安裝請跳至Installation, docker run過後可直接訪問 [localhost:8888](http://localhost:8888/
 
