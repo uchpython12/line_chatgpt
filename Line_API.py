@@ -1,6 +1,6 @@
 import requests
-from openpyxl.reader.excel import load_workbook
 from pyngrok import ngrok     # pip install pyngrok
+import openpyxl
 
 def Line_設定Webhook(ngrokHTTP,auth_token):
     # 資料回傳 到 Line 的 https 伺服器
@@ -121,7 +121,7 @@ def Line_廣播到所有用戶(auth_token,str1="hello"):
     print(response)
 def Line_讀取設定檔Excel(filename):
     global auth_token,YouruserID,userId,groupID,接收人的id
-    wb = load_workbook(filename) # 'line.xlsx')  # 讀取檔案
+    wb = openpyxl.load_workbook(filename) # 'line.xlsx')  # 讀取檔案
     # 方法一打開第一個 工作表單
     sheetSetup = wb["setup"]         # 打開一個工作欄
     auth_token=sheetSetup.cell(row=2, column=1).value
