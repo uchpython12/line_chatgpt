@@ -132,7 +132,7 @@ def Line_讀取設定檔Excel(filename):
 def ngrok自動啟動加自動上傳Webhook網址():
     ngrokHTTP=ngrok_啟動()
     # auth_token,接收人的id=auth_token,userId
-    auth_token,接收人的id=Line_讀取設定檔Excel('line.xlsx')
+    auth_token,接收人的id,openai_key=Line_讀取設定檔Excel('line.xlsx')
     t1=Line_設定Webhook(ngrokHTTP,auth_token)
 
     # print(ngrokHTTP)
