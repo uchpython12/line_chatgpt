@@ -1,5 +1,4 @@
 Flask
-load_workbook
 pyngrok
 openai
 openpyxl
